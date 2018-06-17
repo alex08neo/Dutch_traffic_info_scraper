@@ -1,6 +1,6 @@
 # Python-based webscraper for scraping traffic data from the Dutch traffic information service, [vid.nl](https://www.vid.nl)
 
-## Webscraper written in Python, which with the help of [Selenium](https://pypi.python.org/pypi/selenium), scrapes traffic data from the Dutch main traffic service platform, [vid.nl](https://www.vid.nl). Headline variables retrieved are the highway or expressway under consideration, the location of the traffic jam, the reason for the traffic jam, the date, time and day of the week.
+### Webscraper written in Python, which with the help of [Selenium](https://pypi.python.org/pypi/selenium), scrapes traffic data from the Dutch main traffic service platform, [vid.nl](https://www.vid.nl). Headline variables retrieved are the highway or expressway under consideration, the location of the traffic jam, the reason for the traffic jam, the date, time and day of the week.
 
 This scraper has initially been created to compile a vast database of traffic info / jams in the Netherlands. For this reason, this script has an " initial" and " subsequent" loop. The " initial" script creates a DataFrame, which gets saved / exported as a CSV. This CSV in turn can be appended to in "subsequent" runs. Kindly note, one would have to manually switch between the " initial" and " subsequent" runs.
 
