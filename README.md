@@ -14,7 +14,7 @@ Please note:
 
 - you will have to point the browser variable to the local path of your webdriver
 
-### NB - in the "lxml" folder you will find a light-weight version of the scraper (not dependent on ChromeDriver or Selenium). This version is ideal for deployment on cloud application platform's like [Heroku](https://www.heroku.com). I've added the corresponding Procfile and requirements.txt should you wish to deploy this scraper on the latter platform.
+#### NB - in the "lxml" folder you will find a light-weight version of the scraper (not dependent on ChromeDriver or Selenium). This version is ideal for deployment on cloud application platform's like [Heroku](https://www.heroku.com). I've added the corresponding Procfile and requirements.txt should you wish to deploy this scraper on the latter platform. This version also includes an SQL-hook for interaction with a PostgreSQL-database.
 
 Example of the resulting dataframe:
 
