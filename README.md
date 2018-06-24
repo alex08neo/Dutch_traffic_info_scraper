@@ -1,10 +1,10 @@
 # Python-based webscraper for scraping traffic data from the Dutch traffic information service, [vid.nl](https://www.vid.nl)
 
-### Webscraper written in Python, which with the help of [Selenium](https://pypi.python.org/pypi/selenium), scrapes traffic data from the Dutch main traffic service platform, [vid.nl](https://www.vid.nl). Headline variables retrieved are the highway or expressway under consideration, the location of the traffic jam, the reason for the traffic jam, the date, time and day of the week.
+### Webscraper (for local-usage) written in Python, which with the help of [Selenium](https://pypi.python.org/pypi/selenium), scrapes traffic data from the Dutch main traffic service platform, [vid.nl](https://www.vid.nl). Headline variables retrieved are the highway or expressway under consideration, the location of the traffic jam, the reason for the traffic jam, the date, time and day of the week.
 
 This scraper has initially been created to compile a vast database of traffic info / jams in the Netherlands. For this reason, this script has an " initial" and " subsequent" loop. The " initial" script creates a DataFrame, which gets saved / exported as a CSV. This CSV in turn can be appended to in "subsequent" runs. Kindly note, one would have to manually switch between the " initial" and " subsequent" runs.
 
-This tool has been written by means of:
+This script has been written by means of:
 
  - [Python 3.6.5](https://www.python.org/downloads/release/python-365/)
  - [Selenium 3.12](https://docs.seleniumhq.org/download/)
@@ -13,6 +13,8 @@ This tool has been written by means of:
 Please note:
 
 - you will have to point the browser variable to the local path of your webdriver
+
+### NB - in the "lxml" folder you will find a light-weight version of the scraper (not dependent on ChromeDriver or Selenium). This version is ideal for deployment on cloud application platform's like [Heroku](https://www.heroku.com). I've added the corresponding Procfile and requirements.txt should you wish to deploy this scraper on the latter platform.
 
 Example of the resulting dataframe:
 
