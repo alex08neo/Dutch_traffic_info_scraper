@@ -22,25 +22,37 @@ Example of the resulting dataframe:
 
 date             additional bin     day                        location-1
 
-2018-06-17               NA   1  Sunday             A27Gorinchem - Almere
-2018-06-17               NA   1  Sunday                N33Veendam - Assen
-2018-06-17               NA   1  Sunday     N59Zierikzee - Hellegatsplein
-2018-06-17               NA   1  Sunday                  A59Zonzeel - Oss
-2018-06-17               NA   1  Sunday     N59Hellegatsplein - Zierikzee
-2018-06-17  een brugopening   1  Sunday         N196Hoofddorp <> Uithoorn
-2018-06-17  een brugopening   1  Sunday  N207Alphen aan den Rijn <> Lisse
-2018-06-17       vertraging   1  Sunday          N302Enkhuizen - Lelystad
-2018-06-17  een brugopening   1  Sunday           N514Krommenie <> Wormer
+2018-06-17               NA   1  Sunday                Gorinchem - Almere
+2018-06-17               NA   1  Sunday                   Veendam - Assen
+2018-06-17               NA   1  Sunday        Zierikzee - Hellegatsplein
+2018-06-17               NA   1  Sunday                     Zonzeel - Oss
+2018-06-17               NA   1  Sunday        Hellegatsplein - Zierikzee
+2018-06-17  een brugopening   1  Sunday             Hoofddorp <> Uithoorn
+2018-06-17  een brugopening   1  Sunday      Alphen aan den Rijn <> Lisse
+2018-06-17       vertraging   1  Sunday              Enkhuizen - Lelystad
+2018-06-17  een brugopening   1  Sunday               Krommenie <> Wormer
 
-location-2                                          road  time
-                                               NA   A27  13:13
-                                               NA   N33  13:13
-                                               NA   N59  13:13
-                                               NA   A59  13:13
-                                               NA   N59  13:13
-in beide richtingen ter hoogte van de Aalsmeer...  N196  13:13
-in beide richtingen ter hoogte van de Elsbroek...  N207  13:13
-    tussen Naviduct Krabbersgat en de Houtribbrug  N302  13:13
-in beide richtingen ter hoogte van de Prins Cl...  N514  13:13
+location-2                                          road  time type
+                                               NA   A27  13:13 Permanent_Construction
+                                               NA   N33  13:13 Traffic_Jam
+                                               NA   N59  13:13 Traffic_Jam
+                                               NA   A59  13:13 Traffic_Jam
+                                               NA   N59  13:13 Traffic_Jam
+in beide richtingen ter hoogte van de Aalsmeer...  N196  13:13 Permanent_Construction
+in beide richtingen ter hoogte van de Elsbroek...  N207  13:13 Permanent_Construction
+    tussen Naviduct Krabbersgat en de Houtribbrug  N302  13:13 Permanent_Construction
+in beide richtingen ter hoogte van de Prins Cl...  N514  13:13 Permanent_Construction
+
+description                                         km
+
+[afgesloten verbindingsweg naar de A10 richtin...   NA
+wegafsluiting\n      in verband met\n      , ...    3
+wegafsluiting\n      in verband met\n      , ...    2
+wegafsluiting\n      in verband met\n      , ...    NA
+[een brugopening]                                   NA
+[een brugopening]                                   NA
+[afgesloten verbindingsweg naar de A4 richtin...    NA
+wegafsluiting\n      in verband met\n      , ...    1
+wegafsluiting\n      in verband met\n      , ...    2
 
 ```
